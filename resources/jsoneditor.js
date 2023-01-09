@@ -7512,23 +7512,23 @@ textmode.create = function (container) {
       powererByWrapper.appendChild(document.createTextNode('powered by '));
       powererByWrapper.className = 'jsoneditor-poweredBy';
 
-      var ace = document.createElement('a');
-      ace.appendChild(document.createTextNode('ace'));
-      ace.href = 'https://ace.c9.io/';
-      ace.target = '_blank';
-      // poweredBy.className = 'jsoneditor-poweredBy';
+      // var ace = document.createElement('a');
+      // ace.appendChild(document.createTextNode('ace'));
+      // ace.href = 'https://ace.c9.io/';
+      // ace.target = '_blank';
+      // // poweredBy.className = 'jsoneditor-poweredBy';
 
-      ace.onclick = function () {
-        // TODO: this anchor falls below the margin of the content,
-        // therefore the normal a.href does not work. We use a click event
-        // for now, but this should be fixed.
-        window.open(ace.href, ace.target, 'noreferrer');
-      };
+      // ace.onclick = function () {
+      //   // TODO: this anchor falls below the margin of the content,
+      //   // therefore the normal a.href does not work. We use a click event
+      //   // for now, but this should be fixed.
+      //   window.open(ace.href, ace.target, 'noreferrer');
+      // };
 
 
       var github_jsoneditor = document.createElement('a');
-      github_jsoneditor.appendChild(document.createTextNode('jsoneditor'));
-      github_jsoneditor.href = 'https://github.com/josdejong/jsoneditor';
+      github_jsoneditor.appendChild(document.createTextNode('jsonEditor'));
+      github_jsoneditor.href = 'https://github.com/zsy-all/JSONEditor';
       github_jsoneditor.target = '_blank';
       // poweredBy.className = 'jsoneditor-poweredBy';
 
@@ -7540,9 +7540,8 @@ textmode.create = function (container) {
       };
 
       powererByWrapper.appendChild(github_jsoneditor)
-      powererByWrapper.appendChild(document.createTextNode(' , '));
-
-      powererByWrapper.appendChild(ace)
+      //powererByWrapper.appendChild(document.createTextNode(' , '));
+      //powererByWrapper.appendChild(ace)
       this.menu.appendChild(powererByWrapper);
     }
   }
